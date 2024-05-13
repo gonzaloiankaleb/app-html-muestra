@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación CRUD con Base de Datos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aplicación CRUD con Base de Datos</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="conectarBD">Conectar a Base de Datos</a></li>
+                <li><a href="#" id="eliminarBD">Eliminar Base de Datos</a></li>
+                <li><a href="#" id="salir">Salir</a></li>
+                <li><a href="#" id="resetearCampos">Resetear Campos</a></li>
+                <li><a href="#" id="acercaDe">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+            </div>
+            <div>
+                <label for="puesto">Cargo:</label>
+                <input type="text" id="puesto" required>
+            </div>
+            <div>
+                <label for="salario">Salario:</label>
+                <input type="number" id="salario" required>
+            </div>
+            <div>
+                <button type="button" id="crear">Crear Registro</button>
+                <button type="button" id="actualizar">Actualizar Registro</button>
+                <button type="button" id="mostrar">Mostrar Lista</button>
+                <button type="button" id="eliminar">Eliminar Registro</button>
+            </div>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Cargo</th>
+                    <th>Salario</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
